@@ -14,6 +14,6 @@ class _PaymentDetailState extends State<PaymentDetail> {
   }
 
   Widget _buildBody() {
-    return Center(child: Text("Payment Will be here"));
+    return Center(child: Text("Payment Thalath"));
   }
 }
