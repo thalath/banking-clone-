@@ -93,29 +93,30 @@ class _TransferDetailState extends State<TransferDetail> {
       margin: const EdgeInsets.all(10),
       child: GridView.count(
         shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
         crossAxisCount: 2,
         childAspectRatio: 3 / 2,
         mainAxisSpacing: 5,
         crossAxisSpacing: 5,
         children: [
           _localGridItems(
-            Icons.person_add_alt_1_rounded,
+            Icons.account_circle_sharp,
             "Own account",
             "make transfer to your own account",
           ),
           _localGridItems(
-            Icons.person_add_alt_1_rounded,
-            "Own account",
+            Icons.abc,
+            "ABA account",
+            "Transfer money to other ABA customers",
+          ),
+          _localGridItems(
+            Icons.local_activity,
+            "Local Banks & Wallets",
             "make transfer to your own account",
           ),
           _localGridItems(
             Icons.person_add_alt_1_rounded,
-            "Own account",
-            "make transfer to your own account",
-          ),
-          _localGridItems(
-            Icons.person_add_alt_1_rounded,
-            "Own account",
+            "Cash-by-code",
             "make transfer to your own account",
           ),
         ],
@@ -137,7 +138,7 @@ class _TransferDetailState extends State<TransferDetail> {
           Icon(iconData, size: 35),
           Text(
             title,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
           Text(subtitle),
         ],

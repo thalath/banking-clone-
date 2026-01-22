@@ -92,7 +92,7 @@ class _MainABAPageState extends State<MainABAPage> {
   }
 
   Widget _builderTopView() {
-    String profileImage = 'assets/images/Leakhena.jpg';
+    String profileImage = 'assets/images/thalath.jpg';
     return Container(
       padding: EdgeInsets.only(bottom: 10),
       margin: EdgeInsets.only(left: 10, right: 10, bottom: 10),
