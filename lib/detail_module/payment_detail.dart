@@ -10,7 +10,7 @@ class PaymentDetail extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        // leading: const Icon(Icons.arrow_back, color: Colors.white),
+        leading: const Icon(Icons.arrow_back, color: Colors.white),
         foregroundColor: Colors.white,
         title: const Text(
           "ABA ទទូទាត់",

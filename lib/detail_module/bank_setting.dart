@@ -16,6 +16,7 @@ class _ProfileDetailState extends State<ProfileDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 4, 82, 106),
+      appBar: AppBar(title: Text("ABA' Setting")),
       body: _buildBody(),
     );
   }
